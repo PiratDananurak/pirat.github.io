@@ -1,144 +1,191 @@
 <!DOCTYPE html>
-<html>
-<title>W3.CSS Template</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
-html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
-</style>
-<body class="w3-light-grey">
+<html lang="en">
 
-<!-- Page Container -->
-<div class="w3-content w3-margin-top" style="max-width:1400px;">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <style>
+        html,
+        body,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: 'Poppins', sans-serif;
+        }
 
-  <!-- The Grid -->
-  <div class="w3-row-padding">
-  
+        html {
+            scroll-behavior: smooth;
+        }
+
+        p {
+            color: #003333;
+        }
+
+        a {
+            text-decoration: none;
+            color: #3769d4;
+            padding-right: 20px;
+        }
+
+        a:hover{
+            opacity: 0.7;
+        }
+        * {
+            box-sizing: border-box;
+        }
+
+        #header {
+            margin-bottom: 10px;
+            background: #003333;
+            color: #ffffff;
+            padding: 10px;
+            margin-top: -8px;
+            margin-left: -8px;
+            margin-right: -8px;
+            position: sticky;
+            top: 0;
+            opacity: 0.9;
+        }
+
+        .card {
+            border: 1px solid #ddd;
+            background: #F5F5F5;
+            padding: 20px;
+            margin-bottom: 10px;
+        }
+
+        #left {
+            float: left;
+            width: 30%;
+            box-shadow: 3px 3px 5px #BEBEBE;
+        }
+
+        #right1 {
+            float: right;
+            width: 69%;
+            box-shadow: 3px 3px 5px #BEBEBE;
+        }
+
+        #right2 {
+            float: right;
+            width: 69%;
+            box-shadow: 3px 3px 5px #BEBEBE;
+        }
+
+        #right3 {
+            float: right;
+            width: 69%;
+            box-shadow: 3px 3px 5px #BEBEBE;
+        }
+
+        #right4 {
+            float: right;
+            width: 69%;
+            box-shadow: 3px 3px 5px #BEBEBE;
+        }
+
+        .clr {
+            clear: both;
+        }
+
+        #footer {
+            text-align: center;
+            background: #003333;
+            color: #ffffff;
+            padding: 30px;
+        }
+
+        li {
+            display: inline;
+        }
+
+        li a {
+            padding-right: 20px;
+            color: #ffffff;
+        }
+
+        li a:hover{
+            opacity: 0.7;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- HEADER -->
+    <div id="header">
+        <li>
+            <a href="#left">ABOUT ME</a>
+            <a href="#right1">EDUCATIONS</a>
+            <a href="#right2">WORK EXPERIENCE</a>
+            <a href="#right3">SKILLS & ABILITIES</a>
+            <a href="#right4">PERSONALLITY</a>
+        </li>
+    </div>
     <!-- Left Column -->
-    <div class="w3-third">
-    
-      <div class="w3-white w3-text-grey w3-card-4">
-        <div class="w3-display-container">
-          <img src="iot.png" style="width:100%" alt="Avatar">
-          <div class="w3-display-bottomleft w3-container w3-text-black">
-            <h2>Jane Doe</h2>
-          </div>
-        </div>
-        <div class="w3-container">
-          <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-teal"></i>Designer</p>
-          <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-teal"></i>London, UK</p>
-          <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"></i>ex@mail.com</p>
-          <p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-teal"></i>1224435534</p>
-          <hr>
-
-          <p class="w3-large"><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-teal"></i>Skills</b></p>
-          <p>Adobe Photoshop</p>
-          <div class="w3-light-grey w3-round-xlarge w3-small">
-            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:90%">90%</div>
-          </div>
-          <p>Photography</p>
-          <div class="w3-light-grey w3-round-xlarge w3-small">
-            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:80%">
-              <div class="w3-center w3-text-white">80%</div>
-            </div>
-          </div>
-          <p>Illustrator</p>
-          <div class="w3-light-grey w3-round-xlarge w3-small">
-            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:75%">75%</div>
-          </div>
-          <p>Media</p>
-          <div class="w3-light-grey w3-round-xlarge w3-small">
-            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:50%">50%</div>
-          </div>
-          <br>
-
-          <p class="w3-large w3-text-theme"><b><i class="fa fa-globe fa-fw w3-margin-right w3-text-teal"></i>Languages</b></p>
-          <p>English</p>
-          <div class="w3-light-grey w3-round-xlarge">
-            <div class="w3-round-xlarge w3-teal" style="height:24px;width:100%"></div>
-          </div>
-          <p>Spanish</p>
-          <div class="w3-light-grey w3-round-xlarge">
-            <div class="w3-round-xlarge w3-teal" style="height:24px;width:55%"></div>
-          </div>
-          <p>German</p>
-          <div class="w3-light-grey w3-round-xlarge">
-            <div class="w3-round-xlarge w3-teal" style="height:24px;width:25%"></div>
-          </div>
-          <br>
-        </div>
-      </div><br>
-
-    <!-- End Left Column -->
+    <div id="left" class="card">
+        <img src="Avatar1.jpeg" style="width: 100%" alt="Avatar">
+        <h2>Pirat Dananurak</h2>
+        <hr>
+        <h1>ABOUT ME:</h1>
+        <p>Date of Birth: February 18, 1998</p>
+        <p>Age: 23</p>
+        <p>Nationality: Thai</p>
+        <p>Place of Birth: Lampang Thailand.</p>
+        <hr>
+        <a href="https://gmail.com" target="_blank">&#9993; s6201072516176@email.kmutnb.ac.th</a><br><br>
+        <a href="https://facebook.com" target="_blank">FB: Brow Pirat</a>
+        <p>&phone; 091-1389880</p>
     </div>
+    <!-- Right Column1 -->
+    <div id="right1" class="card">
+        <h1> EDUCATIONS:</h1>
+        <h4>2018 - Current</h4>
+        <p>King Mongkut's University of Technology North Bangkok</p>
+        <p>Bachelor of Engineering Program in Instrumentation System Engineering</p>
+        <h4>2016 - 2018</h4>
+        <p>Lampang techical college, High Vocational Certificate</p>
+        <p>Technology computer (GPA: 3.46/4.00)</p>
+        <h4>2014 - 2016</h4>
+        <p>Lampang techical college, Certificate of Technical Vocation</p>
+        <p>Electronics (GPA: 3.26/4.00)</p>
 
-    <!-- Right Column -->
-    <div class="w3-twothird">
-    
-      <div class="w3-container w3-card w3-white w3-margin-bottom">
-        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Work Experience</h2>
-        <div class="w3-container">
-          <h5 class="w3-opacity"><b>Front End Developer / w3schools.com</b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jan 2015 - <span class="w3-tag w3-teal w3-round">Current</span></h6>
-          <p>Lorem ipsum dolor sit amet. Praesentium magnam consectetur vel in deserunt aspernatur est reprehenderit sunt hic. Nulla tempora soluta ea et odio, unde doloremque repellendus iure, iste.</p>
-          <hr>
-        </div>
-        <div class="w3-container">
-          <h5 class="w3-opacity"><b>Web Developer / something.com</b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Mar 2012 - Dec 2014</h6>
-          <p>Consectetur adipisicing elit. Praesentium magnam consectetur vel in deserunt aspernatur est reprehenderit sunt hic. Nulla tempora soluta ea et odio, unde doloremque repellendus iure, iste.</p>
-          <hr>
-        </div>
-        <div class="w3-container">
-          <h5 class="w3-opacity"><b>Graphic Designer / designsomething.com</b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jun 2010 - Mar 2012</h6>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p><br>
-        </div>
-      </div>
-
-      <div class="w3-container w3-card w3-white">
-        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Education</h2>
-        <div class="w3-container">
-          <h5 class="w3-opacity"><b>W3Schools.com</b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Forever</h6>
-          <p>Web Development! All I need to know in one place</p>
-          <hr>
-        </div>
-        <div class="w3-container">
-          <h5 class="w3-opacity"><b>London Business School</b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2013 - 2015</h6>
-          <p>Master Degree</p>
-          <hr>
-        </div>
-        <div class="w3-container">
-          <h5 class="w3-opacity"><b>School of Coding</b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2010 - 2013</h6>
-          <p>Bachelor Degree</p><br>
-        </div>
-      </div>
-
-    <!-- End Right Column -->
     </div>
-    
-  <!-- End Grid -->
-  </div>
-  
-  <!-- End Page Container -->
-</div>
-
-<footer class="w3-container w3-teal w3-center w3-margin-top">
-  <p>Find me on social media.</p>
-  <i class="fa fa-facebook-official w3-hover-opacity"></i>
-  <i class="fa fa-instagram w3-hover-opacity"></i>
-  <i class="fa fa-snapchat w3-hover-opacity"></i>
-  <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-  <i class="fa fa-twitter w3-hover-opacity"></i>
-  <i class="fa fa-linkedin w3-hover-opacity"></i>
-  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
-</footer>
-
+    <!-- Right Column2 -->
+    <div id="right2" class="card">
+        <h1>WORK EXPERIENCE:</h1>
+        <h4>2016 - 2018</h4>
+        <p>Murata Electronics (Thailand ), Ltd., Assistant engineer</p>
+    </div>
+    <!-- Right Column3 -->
+    <div id="right3" class="card">
+        <h1>SKILLS & ABILITIES:</h1>
+        <p>Microsoft office (Word, Excel, Power Point)</p>
+        <p>Proteus</p>
+        <p>PLC</p>
+        <p>Labview</p>
+        <p>C programming, Ardunio, HTML</p>
+    </div>
+    <!-- Right Column4 -->
+    <div id="right4" class="card">
+        <h1>PERSONALLITY:</h1>
+        <p>Good human relationship and flexibility to work in a team.</p>
+        <p>Ability to finish work within the time limit with best quality of work.</p>
+        <p>Good relationship skills, able to communicate effectively with co-workers</p>
+    </div>
+    <div class="clr"></div>
+    <!-- Footer -->
+    <div id="footer">
+        <p1 class="text-center">Designed by PIRAT<p1>
+    </div>
 </body>
+
 </html>
