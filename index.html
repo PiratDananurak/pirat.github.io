@@ -5,14 +5,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap" rel="stylesheet">
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Resume</title>
     <style>
         html,
         body,
+        button,
         h1,
         h2,
         h3,
@@ -22,25 +23,28 @@
             font-family: 'Poppins', sans-serif;
         }
 
+        * {
+            box-sizing: border-box;
+        }
+
         html {
             scroll-behavior: smooth;
         }
 
+        .box {
+            color: #18191A;
+        }
+
         p {
-            color: #003333;
+            font-size: 16px;
         }
 
         a {
             text-decoration: none;
-            color: #3769d4;
-            padding-right: 20px;
         }
 
-        a:hover{
+        a:hover {
             opacity: 0.7;
-        }
-        * {
-            box-sizing: border-box;
         }
 
         #header {
@@ -54,6 +58,7 @@
             position: sticky;
             top: 0;
             opacity: 0.9;
+            text-align: center;
         }
 
         .card {
@@ -102,6 +107,9 @@
             background: #003333;
             color: #ffffff;
             padding: 30px;
+            margin-bottom: -8px;
+            margin-left: -8px;
+            margin-right: -8px;
         }
 
         li {
@@ -113,8 +121,32 @@
             color: #ffffff;
         }
 
-        li a:hover{
+        li a:hover {
             opacity: 0.7;
+        }
+
+        /* smartphone */
+        @media only screen and (max-width:700px) {
+            #left {
+                width: 100%;
+            }
+
+            #right1 {
+                width: 100%;
+            }
+
+            #right2 {
+
+                width: 100%;
+            }
+
+            #right3 {
+                width: 100%;
+            }
+
+            #right4 {
+                width: 100%;
+            }
         }
     </style>
 </head>
@@ -122,13 +154,13 @@
 <body>
     <!-- HEADER -->
     <div id="header">
-        <li>
-            <a href="#left">ABOUT ME</a>
-            <a href="#right1">EDUCATIONS</a>
-            <a href="#right2">WORK EXPERIENCE</a>
-            <a href="#right3">SKILLS & ABILITIES</a>
-            <a href="#right4">PERSONALLITY</a>
-        </li>
+        <li><a href="#left">ABOUT ME</a></li>
+        <li><a href="#right1">EDUCATIONS</a></li>
+        <li><a href="#right2">WORK EXPERIENCE</a></li>
+        <li><a href="#right3">SKILLS & ABILITIES</a></li>
+        <li><a href="#right4">PERSONALLITY</a></li>
+        <button onclick="addDarkmode()">DarkMode</button>
+        <button onclick="removeDarkmode()">LightMode</button>
     </div>
     <!-- Left Column -->
     <div id="left" class="card">
@@ -136,14 +168,17 @@
         <h2>Pirat Dananurak</h2>
         <hr>
         <h1>ABOUT ME:</h1>
-        <p>Date of Birth: February 18, 1998</p>
-        <p>Age: 23</p>
-        <p>Nationality: Thai</p>
-        <p>Place of Birth: Lampang Thailand.</p>
+        <p><strong>Date of Birth:</strong> February 18, 1998</p>
+        <p><strong>Age:</strong> 23</p>
+        <p><strong>Nationality:</strong> Thai</p>
+        <p><strong>Place of Birth:</strong> Lampang Thailand.</p>
         <hr>
-        <a href="https://gmail.com" target="_blank">&#9993; s6201072516176@email.kmutnb.ac.th</a><br><br>
-        <a href="https://facebook.com" target="_blank">FB: Brow Pirat</a>
-        <p>&phone; 091-1389880</p>
+        <a href="https://gmail.com" target="_blank"><img src="gmail.png" width="50px" height="50px"></a>
+        <a href="https://facebook.com" target="_blank"><img src="facebook.png" width="50px" height="50px"></a>
+        <a href="https://twitter.com/?lang=en" target="_blank"><img src="twitter.png" width="50px" height="50px"></a>
+        <a href="https:line.me/th/" target="_blank"><img src="line.png" width="50px" height="50px"></a>
+        <br>
+        <p><img src="phone.png" width="30px" height="30px"> <strong>091-1389880 </strong> </p>
     </div>
     <!-- Right Column1 -->
     <div id="right1" class="card">
@@ -157,7 +192,6 @@
         <h4>2014 - 2016</h4>
         <p>Lampang techical college, Certificate of Technical Vocation</p>
         <p>Electronics (GPA: 3.26/4.00)</p>
-
     </div>
     <!-- Right Column2 -->
     <div id="right2" class="card">
@@ -182,10 +216,12 @@
         <p>Good relationship skills, able to communicate effectively with co-workers</p>
     </div>
     <div class="clr"></div>
+
     <!-- Footer -->
     <div id="footer">
         <p1 class="text-center">Designed by PIRAT<p1>
     </div>
+    <script src="app.js"></script>
 </body>
 
 </html>
