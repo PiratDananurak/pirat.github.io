@@ -21,6 +21,7 @@ function addDarkmode(){
     right3.setAttribute('class','darkmode');
     right4.classList.add("darkmode");
     right4.setAttribute('class','darkmode');
+    alert("DarkMode");
 }
 
 function removeDarkmode(){
@@ -38,6 +39,7 @@ function removeDarkmode(){
     right3.setAttribute('class','card');
     right4.classList.remove("darkmode");
     right4.setAttribute('class','card');
+    alert("LightMode");
 }
 
 
