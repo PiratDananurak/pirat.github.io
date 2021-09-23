@@ -1,0 +1,12 @@
+.darkmode{
+    color: #E4E6EB;
+    background-color: #212121 ;
+    border: 1px solid #192734;
+    padding: 20px;
+    margin-bottom: 10px;
+}
+
+button{
+    color: teal;
+}
+
