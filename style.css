@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .darkmode{
     color: #E4E6EB;
     background-color: #212121 ;
@@ -10,3 +11,17 @@ button{
     color: teal;
 }
 
+=======
+.darkmode{
+    color: #E4E6EB;
+    background-color: #212121 ;
+    border: 1px solid #192734;
+    padding: 20px;
+    margin-bottom: 10px;
+}
+
+button{
+    color: teal;
+}
+
+>>>>>>> 0ebf6afbd26613163aef74845601e197dde986a8
